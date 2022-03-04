@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledNavbarHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.darkbg};
+    height: 60px;
 
     .headerWrapper {
         display: flex;

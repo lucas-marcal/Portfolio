@@ -5,6 +5,7 @@ import { Container } from "../components/styles/Container.styled";
 import { Navbar } from "../components/Navbar";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "../components/styles/Global";
+import Featured from "../components/Featured";
 
 const theme = {
     colors: {
@@ -23,21 +24,7 @@ const IndexPage = () => {
             <>
                 <GlobalStyles />
                 <Navbar />
-                <section>
-                    <Container>
-                        <div>Imagem</div>
-                        <div>
-                            <h5>Olá! Eu sou o</h5>
-                            <h1>Lucas Marçal</h1>
-                            <p>
-                                Um designer com mais de 10 anos de experiência
-                                mergulhando profundamente no mundo da
-                                tecnologia.
-                            </p>
-                            <button>Me mostre os trabalhos!</button>
-                        </div>
-                    </Container>
-                </section>
+                <Featured />
                 <section>
                     <h1>Projetos</h1>
                     <div>
