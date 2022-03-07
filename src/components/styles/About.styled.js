@@ -25,7 +25,7 @@ export const StyledAbout = styled.section`
         }
     }
 
-    .aboutTitulo {
+    .aboutTitle {
         margin-left: 3vw;
     }
 `;

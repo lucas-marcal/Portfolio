@@ -6,6 +6,7 @@ import GlobalStyles from "../components/styles/Global";
 import Featured from "../components/Featured";
 import Projects from "../components/Projects";
 import About from "../components/About";
+import Skills from "../components/Skills";
 
 const theme = {
     colors: {
@@ -27,14 +28,7 @@ const IndexPage = () => {
                 <Featured />
                 <Projects />
                 <About />
-                <section>
-                    <h1>Skills</h1>
-                    <div>Badges de Skills</div>
-                    <div>
-                        <p>+</p>
-                        <div>NodeJS</div>
-                    </div>
-                </section>
+                <Skills />
                 <section>
                     <h1>Contato</h1>
                     <p>

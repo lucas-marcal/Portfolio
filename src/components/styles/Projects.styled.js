@@ -26,7 +26,7 @@ export const StyledProjectsSection = styled.section`
     }
 
     h1 {
-        color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.colors.secondary};
         margin-bottom: 70px;
     }
 `;

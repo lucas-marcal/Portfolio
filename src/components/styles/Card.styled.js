@@ -52,7 +52,7 @@ export const StyledCard = styled.div`
         font-weight: 200;
         margin-right: 19px;
         margin-bottom: 4px;
-        color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.colors.secondary};
         justify-self: flex-end;
     }
 `;
