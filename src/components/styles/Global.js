@@ -26,12 +26,13 @@ const GlobalStyles = createGlobalStyle`
         border: none;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        box-shadow: 0px 10px 8px #222;
+        box-shadow: 0px 6px 8px #222;
         cursor: pointer;
-        transition: transform 0.3s;
+        transition: 0.3s;
 
         &:hover {
             transform: scale(0.98);
+            box-shadow: 0px 9px 7px #222;
         }
     }
 `;

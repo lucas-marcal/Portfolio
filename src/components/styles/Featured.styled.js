@@ -25,6 +25,7 @@ export const StyledFeatured = styled.section`
         position: relative;
         display: grid;
         grid-template-columns: 2fr 3fr;
+        padding: 0 50px;
     }
 
     .profilepic {
@@ -35,8 +36,10 @@ export const StyledFeatured = styled.section`
         margin-left: -30px;
         z-index: 10;
         align-self: center;
+        padding: 60px 0;
     }
 
     .bgimg {
+        height: 100%;
     }
 `;

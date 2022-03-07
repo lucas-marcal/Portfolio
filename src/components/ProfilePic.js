@@ -5,10 +5,9 @@ export function ProfilePic() {
     return (
         <StaticImage
             src="../images/profilebg.png"
-            alt="Lucas Marçal profile picture"
+            alt=""
             placeholder="blurred"
             layout="constrained"
-            transformOptions={{ greyscale: true }}
         />
     );
 }

@@ -1,11 +1,10 @@
 import * as React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FiExternalLink } from "react-icons/fi";
-import { Container } from "../components/styles/Container.styled";
 import { Navbar } from "../components/Navbar";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "../components/styles/Global";
 import Featured from "../components/Featured";
+import Projects from "../components/Projects";
 
 const theme = {
     colors: {
@@ -25,26 +24,7 @@ const IndexPage = () => {
                 <GlobalStyles />
                 <Navbar />
                 <Featured />
-                <section>
-                    <h1>Projetos</h1>
-                    <div>
-                        <div>Imagem</div>
-                        <div>
-                            <h3>Ecommerce Camisetas</h3>
-                            <p>
-                                Desenvolvido como projeto de conclusão do
-                                Bootcamp Frontend Inter da DIO.
-                            </p>
-                        </div>
-                        <div>
-                            <FaGithub /> <FiExternalLink />
-                        </div>
-                        <div>
-                            <h5>React Redux Material UI Fetch API</h5>
-                        </div>
-                    </div>
-                    <button>Portfolio de Design Gráfico</button>
-                </section>
+                <Projects />
                 <section>
                     <h1>Sobre</h1>
                     <div>Imagem</div>

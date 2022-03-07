@@ -1,0 +1,37 @@
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+import { StyledCard } from "./styles/Card.styled";
+import { ProjectMarshallImg } from "./ProjectMarshallImg";
+
+const Card = () => {
+    return (
+        <StyledCard>
+            <div className="cardContentWrapper">
+                <div>
+                    <ProjectMarshallImg />
+                </div>
+                <div>
+                    <h3>Ecommerce Camisetas</h3>
+                    <p>
+                        Desenvolvido como projeto de conclusão do Bootcamp
+                        Frontend Inter da DIO.
+                    </p>
+                </div>
+                <div className="cardFooter">
+                    <div className="divIcons">
+                        <FaGithub /> <FiExternalLink />
+                    </div>
+                    <div className="projectsTags">
+                        <h5>React</h5>
+                        <h5>Redux</h5>
+                        <h5>Material UI</h5>
+                        <h5>Fetch API</h5>
+                    </div>
+                </div>
+            </div>
+        </StyledCard>
+    );
+};
+
+export default Card;
