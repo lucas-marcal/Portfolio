@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "../components/styles/Global";
 import Featured from "../components/Featured";
 import Projects from "../components/Projects";
+import About from "../components/About";
 
 const theme = {
     colors: {
@@ -25,20 +26,7 @@ const IndexPage = () => {
                 <Navbar />
                 <Featured />
                 <Projects />
-                <section>
-                    <h1>Sobre</h1>
-                    <div>Imagem</div>
-                    <div>
-                        <h1>Programador, Designer, fazedor de várias coisas</h1>
-                        <p>
-                            A graphic designer with 10+ year experience now
-                            diving in deep in the realm of arts combined with
-                            technology. A graphic designer with 10+ year
-                            experience now diving in deep in the realm of arts
-                            combined with technology.
-                        </p>
-                    </div>
-                </section>
+                <About />
                 <section>
                     <h1>Skills</h1>
                     <div>Badges de Skills</div>

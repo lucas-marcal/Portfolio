@@ -5,6 +5,10 @@ export const StyledProjectsSection = styled.section`
         padding: 60px 20px;
     }
 
+    .projectsTitulo {
+        margin-left: 3vw;
+    }
+
     .cardsWrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
