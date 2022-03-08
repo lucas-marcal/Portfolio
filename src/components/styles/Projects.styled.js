@@ -6,14 +6,13 @@ export const StyledProjectsSection = styled.section`
     }
 
     .projectsTitulo {
-        margin-left: 30px;
         margin-bottom: 70px;
     }
 
     .cardsWrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .projectsBtnWrapper {
@@ -29,5 +28,23 @@ export const StyledProjectsSection = styled.section`
     h1 {
         color: ${({ theme }) => theme.colors.secondary};
         margin-bottom: 70px;
+    }
+
+    @media (min-width: 670px) {
+        .cardsWrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .projectsTitulo {
+            margin-left: 30px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .cardsWrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 `;

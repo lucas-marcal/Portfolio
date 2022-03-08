@@ -8,6 +8,9 @@ export function AboutPic() {
             alt=""
             placeholder="blurred"
             layout="constrained"
+            style={{
+                maxWidth: "300px",
+            }}
         />
     );
 }

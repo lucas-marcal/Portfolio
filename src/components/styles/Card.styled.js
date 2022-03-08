@@ -6,6 +6,7 @@ export const StyledCard = styled.div`
     border-radius: 6pt;
     position: relative;
     height: 400px;
+    margin-bottom: 40px;
 
     .cardContentWrapper {
         position: absolute;

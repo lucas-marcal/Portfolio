@@ -11,7 +11,7 @@ export const StyledAbout = styled.section`
 
     .aboutContentWrapper {
         display: grid;
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 1fr;
         gap: 40pt;
         padding-top: 5vh;
 
@@ -25,7 +25,14 @@ export const StyledAbout = styled.section`
         }
     }
 
-    .aboutTitle {
-        margin-left: 30px;
+    @media (min-width: 910px) {
+        .aboutContentWrapper {
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+        }
+
+        .aboutTitle {
+            margin-left: 30px;
+        }
     }
 `;
