@@ -6,7 +6,7 @@ export const StyledAbout = styled.section`
     color: ${({ theme }) => theme.colors.darkerbg};
 
     .aboutWrapper {
-        padding: 60px 20px;
+        padding: 9vh 6vw;
     }
 
     .aboutContentWrapper {

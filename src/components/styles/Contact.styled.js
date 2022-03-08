@@ -4,7 +4,7 @@ export const StyledContact = styled.section`
     background-color: ${({ theme }) => theme.colors.darkerbg};
 
     .contactWrapper {
-        padding: 60px 20px;
+        padding: 9vh 6vw;
 
         p {
             font-style: italic;

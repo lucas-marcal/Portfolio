@@ -1,5 +1,4 @@
 import * as React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Navbar } from "../components/Navbar";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "../components/styles/Global";
@@ -8,6 +7,7 @@ import Projects from "../components/Projects";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const theme = {
     colors: {
@@ -30,12 +30,7 @@ const IndexPage = () => {
             <About />
             <Skills />
             <Contact />
-            <footer>
-                <div>
-                    <FaGithub /> <FaLinkedin />
-                </div>
-                <div>Logo e Copyright</div>
-            </footer>
+            <Footer />
         </ThemeProvider>
     );
 };
