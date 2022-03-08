@@ -4,8 +4,9 @@ export const StyledFeatured = styled.section`
     background-color: ${({ theme }) => theme.colors.darkerbg};
 
     p {
-        margin-bottom: 1rem;
-        font-size: 16pt;
+        margin-bottom: 1.5rem;
+        font-size: 18pt;
+        font-weight: 300;
 
         span {
             font-weight: 600;
@@ -14,6 +15,7 @@ export const StyledFeatured = styled.section`
 
     h1 {
         margin-bottom: 0.7rem;
+        font-size: 42px;
     }
 
     h5 {
@@ -24,7 +26,6 @@ export const StyledFeatured = styled.section`
     .featuredWrapper {
         position: relative;
         display: grid;
-        grid-template-columns: 2fr 3fr;
         padding: 0 50px;
     }
 
@@ -37,6 +38,10 @@ export const StyledFeatured = styled.section`
         z-index: 10;
         align-self: center;
         padding: 60px 0;
+        grid-area: 1/1;
+        position: relative;
+        place-items: center;
+        max-width: 480px;
     }
 
     .bgimg {

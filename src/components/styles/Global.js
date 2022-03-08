@@ -20,7 +20,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .primary-btn {
-        padding: 12px 16px;
+        font-size: 16px;
+        padding: 18px 22px;
         background-color: ${({ theme }) => theme.colors.secondary};
         border-radius: 7px;
         border: none;

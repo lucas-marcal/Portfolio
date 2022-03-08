@@ -7,7 +7,8 @@ export function ProfilePic() {
             src="../images/profilebg.png"
             alt=""
             placeholder="blurred"
-            layout="constrained"
+            layout="fullWidth"
+            style={{ gridArea: "1/1", maxHeight: 500 }}
         />
     );
 }

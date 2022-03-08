@@ -19,7 +19,7 @@ export const StyledProjectsSection = styled.section`
     .projectsBtnWrapper {
         display: flex;
         justify-content: center;
-        margin-top: 1rem;
+        margin-top: 2vh;
     }
 
     .projects-btn {

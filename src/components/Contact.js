@@ -11,7 +11,7 @@ const Contact = () => {
                     Vamos conversar? Você podeusar o formulário abaixo ou enviar
                     um email diretamente para contato@lucasm.io.
                 </p>
-                <form>
+                {/* <form>
                     <div className="form-row">
                         <label htmlFor="name">Nome:</label>
                         <input type="text" name="nome" id="nome"></input>
@@ -23,7 +23,7 @@ const Contact = () => {
                         <textarea name="mensagem" id="mensagem"></textarea>
                     </div>
                     <button type="submit">Enviar</button>
-                </form>
+                </form> */}
             </Container>
         </StyledContact>
     );

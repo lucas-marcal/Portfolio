@@ -7,9 +7,8 @@ const Featured = () => {
     return (
         <StyledFeatured>
             <Container className="featuredWrapper">
-                <div className="bgimg">
-                    <ProfilePic />
-                </div>
+                <ProfilePic />
+
                 <div className="content">
                     <h5>Olá! Eu sou o</h5>
                     <h1>Lucas Marçal</h1>
