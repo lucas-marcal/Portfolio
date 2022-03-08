@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const StyledSkillsSection = styled.section`
     .skillsWrapper {
-        padding: 9vh 6vw;
+        padding: 100px 60px;
     }
 
     .skillsTitle {
-        margin-left: 3vw;
-        margin-bottom: 2vh;
+        margin-left: 30px;
+        margin-bottom: 30px;
         color: ${({ theme }) => theme.colors.secondary};
     }
 

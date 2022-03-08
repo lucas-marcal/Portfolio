@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const StyledProjectsSection = styled.section`
     .projectsWrapper {
-        padding: 9vh 6vw;
+        padding: 100px 60px;
     }
 
     .projectsTitulo {
-        margin-left: 3vw;
-        margin-bottom: 6vh;
+        margin-left: 30px;
+        margin-bottom: 70px;
     }
 
     .cardsWrapper {
@@ -19,7 +19,7 @@ export const StyledProjectsSection = styled.section`
     .projectsBtnWrapper {
         display: flex;
         justify-content: center;
-        margin-top: 2vh;
+        margin-top: 20px;
     }
 
     .projects-btn {

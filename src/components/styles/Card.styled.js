@@ -5,7 +5,7 @@ export const StyledCard = styled.div`
     padding-top: 30px;
     border-radius: 6pt;
     position: relative;
-    height: 30vh;
+    height: 400px;
 
     .cardContentWrapper {
         position: absolute;
@@ -22,6 +22,17 @@ export const StyledCard = styled.div`
     h3 {
         font-size: 25px;
         margin-bottom: 12px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 32px;
+        color: ${({ theme }) => theme.colors.primary};
+        padding-left: 12px;
+        transition: color 0.2s;
+        &:hover {
+            color: #229d53;
+        }
     }
 
     p {

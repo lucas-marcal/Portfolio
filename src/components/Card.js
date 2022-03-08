@@ -22,7 +22,12 @@ const Card = () => {
                 </div>
                 <div className="cardFooter">
                     <div className="divIcons">
-                        <FaGithub /> <FiExternalLink />
+                        <a href="https://">
+                            <FaGithub />
+                        </a>
+                        <a href="https://">
+                            <FiExternalLink />
+                        </a>
                     </div>
                     <div className="projectsTags">
                         <h5>React</h5>
