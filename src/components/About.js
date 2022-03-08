@@ -7,7 +7,7 @@ const About = () => {
     return (
         <StyledAbout>
             <Container className="aboutWrapper">
-                <h1 className="aboutTitle">Sobre</h1>
+                <h1 className="aboutTitle">/ Sobre</h1>
                 <div className="aboutContentWrapper">
                     <AboutPic />
                     <div>

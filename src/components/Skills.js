@@ -7,7 +7,7 @@ const Skills = () => {
     return (
         <StyledSkillsSection>
             <Container className="skillsWrapper">
-                <h1 className="skillsTitle">Skills</h1>
+                <h1 className="skillsTitle">/ Skills</h1>
                 <div className="skillsContentWrapper">
                     <div className="badgesWrapper">
                         <StaticImage

@@ -7,7 +7,7 @@ export const StyledSkillsSection = styled.section`
 
     .skillsTitle {
         margin-left: 3vw;
-        margin-bottom: 5vh;
+        margin-bottom: 2vh;
         color: ${({ theme }) => theme.colors.secondary};
     }
 

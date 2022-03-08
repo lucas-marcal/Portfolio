@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <StyledProjectsSection>
             <Container className="projectsWrapper">
-                <h1 className="projectsTitulo">Projetos</h1>
+                <h1 className="projectsTitulo">/ Projetos</h1>
                 <div className="cardsWrapper">
                     <Card />
                     <Card />

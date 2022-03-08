@@ -7,6 +7,7 @@ import Featured from "../components/Featured";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Skills from "../components/Skills";
+import Contact from "../components/Contact";
 
 const theme = {
     colors: {
@@ -22,40 +23,19 @@ const theme = {
 const IndexPage = () => {
     return (
         <ThemeProvider theme={theme}>
-            <>
-                <GlobalStyles />
-                <Navbar />
-                <Featured />
-                <Projects />
-                <About />
-                <Skills />
-                <section>
-                    <h1>Contato</h1>
-                    <p>
-                        Vamos conversar? Você podeusar o formulário abaixo ou
-                        enviar um email diretamente para contato@lucasm.io.
-                    </p>
-                    <form>
-                        <div className="form-row">
-                            <label htmlFor="name">Nome:</label>
-                            <input type="text" name="nome" id="nome"></input>
-                            <label htmlFor="email">Email:</label>
-                            <input type="text" name="email" id="email"></input>
-                        </div>
-                        <div className="form-row">
-                            <label htmlFor="mensagem">Mensagem:</label>
-                            <textarea name="mensagem" id="mensagem"></textarea>
-                        </div>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </section>
-                <footer>
-                    <div>
-                        <FaGithub /> <FaLinkedin />
-                    </div>
-                    <div>Logo e Copyright</div>
-                </footer>
-            </>
+            <GlobalStyles />
+            <Navbar />
+            <Featured />
+            <Projects />
+            <About />
+            <Skills />
+            <Contact />
+            <footer>
+                <div>
+                    <FaGithub /> <FaLinkedin />
+                </div>
+                <div>Logo e Copyright</div>
+            </footer>
         </ThemeProvider>
     );
 };

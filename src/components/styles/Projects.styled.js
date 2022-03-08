@@ -7,6 +7,7 @@ export const StyledProjectsSection = styled.section`
 
     .projectsTitulo {
         margin-left: 3vw;
+        margin-bottom: 6vh;
     }
 
     .cardsWrapper {
