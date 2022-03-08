@@ -35,7 +35,7 @@ export const StyledFeatured = styled.section`
 
     .content {
         margin-left: -30px;
-        z-index: 10;
+        z-index: 5;
         align-self: center;
         padding: 60px 0;
         grid-area: 1/1;

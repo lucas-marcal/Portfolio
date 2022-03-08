@@ -12,7 +12,7 @@ export const StyledAbout = styled.section`
     .aboutContentWrapper {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 40pt;
+        gap: 20pt;
         padding-top: 5vh;
 
         h1 {
