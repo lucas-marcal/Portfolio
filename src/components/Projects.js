@@ -6,7 +6,7 @@ import Card from "./Card";
 const Projects = () => {
     return (
         <StyledProjectsSection>
-            <Container className="projectsWrapper">
+            <Container className="projectsWrapper" id="projectsContainer">
                 <h1 className="projectsTitulo">/ Projetos</h1>
                 <div className="cardsWrapper">
                     <Card />

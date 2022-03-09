@@ -1,39 +1,101 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
 import { StyledNavbarHeader } from "./styles/Navbar.styled";
 import { Container } from "./styles/Container.styled";
 import { LmLogo } from "./LmLogo";
 
+const navLinks = [
+    { navLinkId: "Projetos", scrollToId: "projectsContainer" },
+    { navLinkId: "Sobre", scrollToId: "aboutContainer" },
+    { navLinkId: "Skills", scrollToId: "skillsContainer" },
+    { navLinkId: "Contato", scrollToId: "contactContainer" },
+];
+
+const NavLink = ({
+    navLinkId,
+    scrollToId,
+    activeNavLinkId,
+    setActiveNavLinkId,
+    click,
+}) => {
+    const handleClick = () => {
+        click();
+        setActiveNavLinkId(navLinkId);
+        document.getElementById(scrollToId).scrollIntoView({
+            behavior: "smooth",
+        });
+    };
+
+    return (
+        <li>
+            <button
+                id={navLinkId}
+                className={
+                    activeNavLinkId === navLinkId
+                        ? "navbtn navbtn-active"
+                        : "navbtn"
+                }
+                onClick={handleClick}
+            >
+                {navLinkId}
+            </button>
+        </li>
+    );
+};
+
 export const Navbar = () => {
     const [show, setShow] = useState(false);
+    const [activeNavLinkId, setActiveNavLinkId] = useState("");
+
+    const showExtNavHandler = () => setShow(false);
 
     return (
         <StyledNavbarHeader>
             <Container className="headerWrapper">
-                <LmLogo />
+                <button
+                    className="navbtn"
+                    onClick={() => {
+                        setActiveNavLinkId("");
+                        document
+                            .getElementById("featuredContainer")
+                            .scrollIntoView({
+                                behavior: "smooth",
+                            });
+                    }}
+                >
+                    <LmLogo />
+                </button>
                 <nav className="primaryNav">
                     <ul>
-                        <li>
-                            <Link to="/#">Projetos</Link>
-                        </li>
-                        <li>
-                            <Link to="/#">Sobre</Link>
-                        </li>
-                        <li>
-                            <Link to="/#">Skills</Link>
-                        </li>
-                        <li>
-                            <Link to="/#">Contato</Link>
-                        </li>
+                        {navLinks.map(({ navLinkId, scrollToId }) => (
+                            <NavLink
+                                navLinkId={navLinkId}
+                                scrollToId={scrollToId}
+                                activeNavLinkId={activeNavLinkId}
+                                setActiveNavLinkId={setActiveNavLinkId}
+                                click={showExtNavHandler}
+                            />
+                        ))}
                     </ul>
                 </nav>
                 <nav className="secondaryNav">
                     <ul>
                         <li>
-                            <a href="https://">GitHub</a>
+                            <a
+                                href="https://github.com/lucas-marcal"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                GitHub
+                            </a>
                         </li>
                         <li>
-                            <a href="https://">LinkedIn</a>
+                            <a
+                                href="https://www.linkedin.com/in/marcal-lucas/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                LinkedIn
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -54,25 +116,34 @@ export const Navbar = () => {
                     <div className="extNavbarWrapper">
                         <nav className="extNavbar">
                             <ul>
-                                <li>
-                                    <Link to="/#">Projetos</Link>
-                                </li>
-                                <li>
-                                    <Link to="/#">Sobre</Link>
-                                </li>
-                                <li>
-                                    <Link to="/#">Skills</Link>
-                                </li>
-                                <li>
-                                    <Link to="/#">Contato</Link>
-                                </li>
+                                {navLinks.map(({ navLinkId, scrollToId }) => (
+                                    <NavLink
+                                        navLinkId={navLinkId}
+                                        scrollToId={scrollToId}
+                                        activeNavLinkId={activeNavLinkId}
+                                        setActiveNavLinkId={setActiveNavLinkId}
+                                        click={showExtNavHandler}
+                                    />
+                                ))}
                             </ul>
-                            <ul>
+                            <ul className="secondaryExtendedNavbar">
                                 <li>
-                                    <a href="https://">GitHub</a>
+                                    <a
+                                        href="https://github.com/lucas-marcal"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        GitHub
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="https://">LinkedIn</a>
+                                    <a
+                                        href="https://www.linkedin.com/in/marcal-lucas/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        LinkedIn
+                                    </a>
                                 </li>
                             </ul>
                         </nav>

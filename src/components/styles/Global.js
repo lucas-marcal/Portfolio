@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 25pt;
     }
 
+
     .primary-btn {
         font-size: 16px;
         padding: 18px 22px;

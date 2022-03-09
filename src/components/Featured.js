@@ -6,7 +6,7 @@ import { StyledFeatured } from "./styles/Featured.styled";
 const Featured = () => {
     return (
         <StyledFeatured>
-            <Container className="featuredWrapper">
+            <Container className="featuredWrapper" id="featuredContainer">
                 <ProfilePic />
 
                 <div className="content">
@@ -17,7 +17,16 @@ const Featured = () => {
                         mergulhando profundamente no mundo da{" "}
                         <span>tecnologia</span>.
                     </p>
-                    <button className="primary-btn">
+                    <button
+                        className="primary-btn"
+                        onClick={() => {
+                            document
+                                .getElementById("projectsContainer")
+                                .scrollIntoView({
+                                    behavior: "smooth",
+                                });
+                        }}
+                    >
                         Me mostre os trabalhos!
                     </button>
                 </div>

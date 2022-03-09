@@ -2,12 +2,21 @@ import styled from "styled-components";
 
 export const StyledNavbarHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.darkbg};
+    position: sticky;
+    top: 0;
+    z-index: 11;
 
     .headerWrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 80px;
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
     }
 
     ul {
@@ -35,6 +44,20 @@ export const StyledNavbarHeader = styled.header`
         }
     }
 
+    .navtbn {
+        color: ${({ theme }) => theme.colors.primary};
+        font-family: "Montserrat", sans-serif;
+        transition: color 0.2s;
+        background: none;
+        border: none;
+        &:hover {
+            color: #229d53;
+        }
+    }
+
+    .navbtn-active {
+    }
+
     .hamburger-btn {
         width: 4rem;
         height: 3rem;
@@ -45,7 +68,7 @@ export const StyledNavbarHeader = styled.header`
         cursor: pointer;
         background: none;
         border: none;
-        z-index: 10;
+        z-index: 12;
         transition: transform 0.2s;
 
         div {
@@ -104,18 +127,42 @@ export const StyledNavbarHeader = styled.header`
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            .secondaryExtendedNavbar {
+                li {
+                    margin: 15px 0;
+                }
+            }
+
             ul {
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
+                margin: 20px 0;
+
+                button {
+                    color: ${({ theme }) => theme.colors.primary};
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    padding: 10px;
+                    background: none;
+                    border: none;
+                    transition: color 0.2s;
+                    cursor: pointer;
+                    &:hover {
+                        color: #229d53;
+                    }
+                }
 
                 li {
                     font-size: 24px;
-                    margin: 20px 0;
+                    margin: 10px 0;
 
                     a {
                         padding: 10px;
+                        font-weight: 300;
                     }
                 }
             }
@@ -123,6 +170,21 @@ export const StyledNavbarHeader = styled.header`
     }
 
     .primaryNav {
+        button {
+            color: ${({ theme }) => theme.colors.primary};
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            padding: 10px;
+            background: none;
+            border: none;
+            transition: color 0.2s;
+            cursor: pointer;
+            &:hover {
+                color: #229d53;
+            }
+        }
+
         @media (max-width: 749px) {
             display: none;
         }

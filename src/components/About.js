@@ -6,7 +6,7 @@ import { AboutPic } from "./AboutPic";
 const About = () => {
     return (
         <StyledAbout>
-            <Container className="aboutWrapper">
+            <Container className="aboutWrapper" id="aboutContainer">
                 <h1 className="aboutTitle">/ Sobre</h1>
                 <div className="aboutContentWrapper">
                     <AboutPic />

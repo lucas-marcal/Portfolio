@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Skills = () => {
     return (
         <StyledSkillsSection>
-            <Container className="skillsWrapper">
+            <Container className="skillsWrapper" id="skillsContainer">
                 <h1 className="skillsTitle">/ Skills</h1>
                 <div className="skillsContentWrapper">
                     <div className="badgesWrapper">

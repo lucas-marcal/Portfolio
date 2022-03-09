@@ -5,11 +5,11 @@ import { Container } from "./styles/Container.styled";
 const Contact = () => {
     return (
         <StyledContact>
-            <Container className="contactWrapper">
+            <Container className="contactWrapper" id="contactContainer">
                 <h1 className="contactTitle">/ Contato</h1>
                 <p>
-                    Vamos conversar? Você podeusar o formulário abaixo ou enviar
-                    um email diretamente para contato@lucasm.io.
+                    Vamos conversar? Você pode usar o formulário abaixo ou
+                    enviar um email diretamente para contato@lucasm.io.
                 </p>
                 {/* <form>
                     <div className="form-row">
