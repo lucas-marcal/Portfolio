@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "./ContactForm";
 import { StyledContact } from "./styles/Contact.styled";
 import { Container } from "./styles/Container.styled";
 
@@ -7,23 +8,12 @@ const Contact = () => {
         <StyledContact>
             <Container className="contactWrapper" id="contactContainer">
                 <h1 className="contactTitle">/ Contato</h1>
-                <p>
+                <p className="contactTxt">
                     Vamos conversar? Você pode usar o formulário abaixo ou
                     enviar um email diretamente para contato@lucasm.io.
                 </p>
-                {/* <form>
-                    <div className="form-row">
-                        <label htmlFor="name">Nome:</label>
-                        <input type="text" name="nome" id="nome"></input>
-                        <label htmlFor="email">Email:</label>
-                        <input type="text" name="email" id="email"></input>
-                    </div>
-                    <div className="form-row">
-                        <label htmlFor="mensagem">Mensagem:</label>
-                        <textarea name="mensagem" id="mensagem"></textarea>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form> */}
+
+                <ContactForm />
             </Container>
         </StyledContact>
     );

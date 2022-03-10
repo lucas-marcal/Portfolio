@@ -5,13 +5,23 @@ export const StyledContact = styled.section`
 
     .contactWrapper {
         padding: 100px 60px;
+    }
 
-        p {
-            font-style: italic;
-            font-weight: 200;
-            font-size: 24px;
-            padding: 0 3vw;
-        }
+    .contactTxt {
+        font-style: italic;
+        font-weight: 200;
+        font-size: 24px;
+        padding: 0 3vw;
+        margin-bottom: 2vh;
+    }
+
+    .successTxt {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 5vh;
+        color: ${({ theme }) => theme.colors.secondary};
     }
 
     .contactTitle {

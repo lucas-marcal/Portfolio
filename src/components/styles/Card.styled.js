@@ -5,7 +5,7 @@ export const StyledCard = styled.div`
     padding-top: 30px;
     border-radius: 6pt;
     position: relative;
-    height: 400px;
+    height: 450px;
     margin-bottom: 40px;
 
     .cardContentWrapper {
@@ -45,6 +45,8 @@ export const StyledCard = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
     }
 
     .divIcons {

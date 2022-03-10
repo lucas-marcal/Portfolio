@@ -26,7 +26,7 @@ const NavLink = ({
     };
 
     return (
-        <li>
+        <li key={navLinkId}>
             <button
                 id={navLinkId}
                 className={
@@ -79,7 +79,7 @@ export const Navbar = () => {
                 </nav>
                 <nav className="secondaryNav">
                     <ul>
-                        <li>
+                        <li key="GitHub">
                             <a
                                 href="https://github.com/lucas-marcal"
                                 target="_blank"
@@ -88,7 +88,7 @@ export const Navbar = () => {
                                 GitHub
                             </a>
                         </li>
-                        <li>
+                        <li key="LinkedIn">
                             <a
                                 href="https://www.linkedin.com/in/marcal-lucas/"
                                 target="_blank"
@@ -127,7 +127,7 @@ export const Navbar = () => {
                                 ))}
                             </ul>
                             <ul className="secondaryExtendedNavbar">
-                                <li>
+                                <li key="GitHub">
                                     <a
                                         href="https://github.com/lucas-marcal"
                                         target="_blank"
@@ -136,7 +136,7 @@ export const Navbar = () => {
                                         GitHub
                                     </a>
                                 </li>
-                                <li>
+                                <li key="LinkedIn">
                                     <a
                                         href="https://www.linkedin.com/in/marcal-lucas/"
                                         target="_blank"
