@@ -14,8 +14,7 @@ const Featured = () => {
                     <h1>Lucas Marçal</h1>
                     <p>
                         Um designer com mais de 10 anos de experiência
-                        mergulhando profundamente no mundo da{" "}
-                        <span>tecnologia</span>.
+                        mergulhando no mundo <span> dev front end</span>.
                     </p>
                     <button
                         className="primary-btn"

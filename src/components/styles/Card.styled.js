@@ -45,8 +45,6 @@ export const StyledCard = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        position: absolute;
-        bottom: 0;
     }
 
     .divIcons {

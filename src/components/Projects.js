@@ -6,7 +6,7 @@ import ProjectsList from "./ProjectsList";
 
 const query = graphql`
     {
-        allContentfulCard {
+        allContentfulCard(sort: { fields: order }) {
             nodes {
                 gitHub
                 externalLink
@@ -17,6 +17,7 @@ const query = graphql`
                 projectImage {
                     gatsbyImageData(placeholder: BLURRED)
                 }
+                order
             }
         }
     }

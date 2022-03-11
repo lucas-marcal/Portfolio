@@ -11,13 +11,33 @@ const About = () => {
                 <div className="aboutContentWrapper">
                     <AboutPic />
                     <div>
-                        <h1>Programador, Designer, fazedor de várias coisas</h1>
+                        <p className="aboutSubTitleWrapper">
+                            <span className="aboutSubTitle">
+                                Programador, designer, empreendedor.
+                            </span>
+                        </p>
                         <p>
-                            A graphic designer with 10+ year experience now
-                            diving in deep in the realm of arts combined with
-                            technology. A graphic designer with 10+ year
-                            experience now diving in deep in the realm of arts
-                            combined with technology.
+                            <span
+                                style={{ fontWeight: 500, fontStyle: "italic" }}
+                            >
+                                Programar soluções eficazes, eficientes e
+                                visualmente impactantes: essa é a missão que
+                                tenho atualmente.
+                            </span>
+                        </p>
+                        <p>
+                            Mas nem sempre foi assim: ao longo dos anos como
+                            designer gráfico freelancer, já participei da
+                            fundação e gestão de empresas de produção
+                            audiovisual, impressão 3D e projetos de engenharia,
+                            ensaio e gravação musical e atualmente tenho a minha
+                            própria marca de molhos de pimenta.
+                        </p>
+                        <p>
+                            Começando tantos projetos do zero e considerando os
+                            desafios diários que vêm junto dessa decisão, acho
+                            que posso me considerar um solucionador de problemas
+                            por vocação. Qual será o próximo?
                         </p>
                     </div>
                 </div>

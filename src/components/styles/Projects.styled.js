@@ -6,7 +6,7 @@ export const StyledProjectsSection = styled.section`
     }
 
     .projectsTitulo {
-        margin-bottom: 70px;
+        margin-bottom: 100px;
     }
 
     .cardsWrapper {
@@ -24,6 +24,7 @@ export const StyledProjectsSection = styled.section`
     .projects-btn {
         box-shadow: 0px 6px 8px #2a2a2a;
         text-decoration: none;
+        text-align: center;
         color: ${({ theme }) => theme.colors.darkerbg};
     }
 

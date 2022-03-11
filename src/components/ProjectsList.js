@@ -1,6 +1,6 @@
 import React from "react";
 import DynamicCard from "./DynamicCard";
-import { ProjectMarshallImg } from "./ProjectMarshallImg";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const ProjectsList = ({ content = [] }) => {
     return (
@@ -15,21 +15,28 @@ const ProjectsList = ({ content = [] }) => {
                     projectTags,
                     projectTitle,
                 } = item;
-                console.log(projectTitle);
+                const image = getImage(projectImage);
+                console.log(projectTags);
                 return (
                     <DynamicCard
                         key={id}
-                        projectImg={<ProjectMarshallImg />}
+                        projectImg={
+                            <GatsbyImage
+                                image={image}
+                                alt={projectTitle}
+                                imgStyle={{ borderRadius: "8px" }}
+                                style={{ marginBottom: "18px" }}
+                            />
+                        }
                         projectTitle={projectTitle}
                         projectDescription={projectDescription}
                         gitHubLink={gitHub}
                         externalLink={externalLink}
                         projectTags={
                             <>
-                                <h5>React</h5>
-                                <h5>Redux</h5>
-                                <h5>Material UI</h5>
-                                <h5>Fetch API</h5>
+                                {projectTags.map((tag, index) => {
+                                    return <h5 key={index}>{tag}</h5>;
+                                })}
                             </>
                         }
                     />

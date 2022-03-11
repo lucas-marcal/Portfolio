@@ -34,14 +34,17 @@ export const StyledFeatured = styled.section`
     }
 
     .content {
-        margin-left: -30px;
         z-index: 5;
         align-self: center;
-        padding: 60px 50px;
+        padding: 60px 30px;
         grid-area: 1/1;
         position: relative;
         place-items: center;
-        max-width: 480px;
+        max-width: 430px;
+
+        @media (min-width: 470px) {
+            padding: 60px 60px;
+        }
     }
 
     .bgimg {

@@ -63,10 +63,12 @@ const Skills = () => {
                     </div>
                     <div className="tagsWrapper">
                         <span>+</span>
-                        <div className="tag">NodeJS</div>
+                        <div className="tag">GatsbyJS</div>
+                        <div className="tag">GraphQL</div>
                         <div className="tag">Bootstrap</div>
                         <div className="tag">Material UI</div>
                         <div className="tag">Sass</div>
+                        <div className="tag">NodeJS</div>
                         <div className="tag">Figma</div>
                         <div className="tag">Photoshop</div>
                         <div className="tag">Illustrator</div>
