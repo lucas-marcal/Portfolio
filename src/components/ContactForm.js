@@ -43,7 +43,7 @@ function ContactForm() {
                 <button
                     type="submit"
                     disabled={state.submitting}
-                    className="primary-btn"
+                    className="primary-btn form-btn"
                 >
                     Enviar
                 </button>

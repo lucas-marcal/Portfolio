@@ -26,7 +26,7 @@ export const StyledFeatured = styled.section`
     .featuredWrapper {
         position: relative;
         display: grid;
-        padding: 0 50px;
+        padding: 0 0px;
     }
 
     .profilepic {
@@ -37,7 +37,7 @@ export const StyledFeatured = styled.section`
         margin-left: -30px;
         z-index: 5;
         align-self: center;
-        padding: 60px 0;
+        padding: 60px 50px;
         grid-area: 1/1;
         position: relative;
         place-items: center;

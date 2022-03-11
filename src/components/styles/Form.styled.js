@@ -63,4 +63,10 @@ export const StyledForm = styled.div`
         height: 300px;
         resize: none;
     }
+
+    .form-btn {
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
 `;
