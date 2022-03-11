@@ -23,6 +23,8 @@ export const StyledProjectsSection = styled.section`
 
     .projects-btn {
         box-shadow: 0px 6px 8px #2a2a2a;
+        text-decoration: none;
+        color: ${({ theme }) => theme.colors.darkerbg};
     }
 
     h1 {

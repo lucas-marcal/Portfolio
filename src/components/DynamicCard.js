@@ -2,39 +2,35 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { StyledCard } from "./styles/Card.styled";
-import { ProjectMarshallImg } from "./ProjectMarshallImg";
 
-const DynamicCard = () => {
+const DynamicCard = ({
+    projectImg,
+    projectTitle,
+    projectDescription,
+    gitHubLink,
+    externalLink,
+    projectTags,
+}) => {
     return (
         <StyledCard>
             <div className="cardContentWrapper">
                 <div className="cardMainContent">
+                    <div>{projectImg}</div>
                     <div>
-                        <ProjectMarshallImg />
-                    </div>
-                    <div>
-                        <h3>Ecommerce Camisetas</h3>
-                        <p>
-                            Desenvolvido como projeto de conclusão do Bootcamp
-                            Frontend Inter da DIO.
-                        </p>
+                        <h3>{projectTitle}</h3>
+                        <p>{projectDescription}</p>
                     </div>
                 </div>
                 <div className="cardFooter">
                     <div className="divIcons">
-                        <a href="https://">
+                        <a href={gitHubLink}>
                             <FaGithub />
                         </a>
-                        <a href="https://">
+                        <a href={externalLink}>
                             <FiExternalLink />
                         </a>
                     </div>
-                    <div className="projectsTags">
-                        <h5>React</h5>
-                        <h5>Redux</h5>
-                        <h5>Material UI</h5>
-                        <h5>Fetch API</h5>
-                    </div>
+                    <div className="projectsTags">{projectTags}</div>
                 </div>
             </div>
         </StyledCard>

@@ -10,10 +10,18 @@ const Footer = () => {
         <StyledFooter>
             <StyledPreFooter>
                 <div>
-                    <a href="https://">
+                    <a
+                        href="https://github.com/lucas-marcal"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <FaGithub />
                     </a>
-                    <a href="https://">
+                    <a
+                        href="https://www.linkedin.com/in/marcal-lucas/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <FaLinkedin />
                     </a>
                 </div>

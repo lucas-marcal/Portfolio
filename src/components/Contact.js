@@ -10,7 +10,7 @@ const Contact = () => {
                 <h1 className="contactTitle">/ Contato</h1>
                 <p className="contactTxt">
                     Vamos conversar? Você pode usar o formulário abaixo ou
-                    enviar um email diretamente para contato@lucasm.io.
+                    enviar um email diretamente para contato@lucasmarcal.com.
                 </p>
 
                 <ContactForm />
