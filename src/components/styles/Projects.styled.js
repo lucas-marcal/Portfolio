@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledProjectsSection = styled.section`
     .projectsWrapper {
-        padding: 100px 60px;
+        padding: 100px 30px;
     }
 
     .projectsTitulo {
@@ -41,6 +41,10 @@ export const StyledProjectsSection = styled.section`
 
         .projectsTitulo {
             margin-left: 30px;
+        }
+
+        .projectsWrapper {
+            padding: 100px 60px;
         }
     }
 

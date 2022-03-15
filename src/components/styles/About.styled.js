@@ -6,7 +6,7 @@ export const StyledAbout = styled.section`
     color: ${({ theme }) => theme.colors.darkerbg};
 
     .aboutWrapper {
-        padding: 100px 60px;
+        padding: 100px 30px;
     }
 
     .aboutContentWrapper {
@@ -38,6 +38,12 @@ export const StyledAbout = styled.section`
             font-size: 18pt;
             line-height: 2rem;
             margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width: 670px) {
+        .aboutWrapper {
+            padding: 100px 60px;
         }
     }
 

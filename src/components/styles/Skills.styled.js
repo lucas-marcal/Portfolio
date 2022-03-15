@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledSkillsSection = styled.section`
     .skillsWrapper {
-        padding: 100px 60px;
+        padding: 100px 30px;
     }
 
     .skillsTitle {
@@ -22,6 +22,12 @@ export const StyledSkillsSection = styled.section`
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+    }
+
+    @media (min-width: 670px) {
+        .skillsWrapper {
+            padding: 100px 60px;
+        }
     }
 
     .tagsWrapper {
